@@ -6,7 +6,7 @@
     "dev": "node build/dev-server.js",
     "build": "rimraf dist && webpack --progress --hide-modules --config build/webpack.prod.conf.js",
     "test": "karma start build/karma.conf.js --single-run",
-    "deploy: "node_modules/gh-pages/bin/gh-pages -d dist"
+    "deploy": "node_modules/gh-pages/bin/gh-pages -d dist"
   },
   "dependencies": {
     "gh-pages": "^0.9.0",
