@@ -5,9 +5,11 @@
   "scripts": {
     "dev": "node build/dev-server.js",
     "build": "rimraf dist && webpack --progress --hide-modules --config build/webpack.prod.conf.js",
-    "test": "karma start build/karma.conf.js --single-run"
+    "test": "karma start build/karma.conf.js --single-run",
+    "deploy: "node_modules/gh-pages/bin/gh-pages -d dist"
   },
   "dependencies": {
+    "gh-pages": "^0.9.0",
     "lodash": "^4.2.1",
     "vue": "^1.0.16"
   },
