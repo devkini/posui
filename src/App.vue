@@ -34,6 +34,8 @@
       <!-- debugging -->
       <input type="checkbox" v-model="debug" /> Enable Debug
       <pre v-if="debug">{{ $data | json }}</pre>
+      <br />
+      <span>Source code - <a href="https://github.com/devkini/posui">https://github.com/devkini/posui</a></span>
     </div>
 </div>
 </template>
